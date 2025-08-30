@@ -14,7 +14,6 @@ for i in 1..<CommandLine.arguments.count {
 
     // Print the result if a definition is found.
     if let definitionString = definition?.takeRetainedValue() as? String {
-        print("Definition for '\(wordToDefine)':\n")
         print(definitionString)
         if i < CommandLine.arguments.count - 1 {
             print("\n---") // Separator for multiple definitions
